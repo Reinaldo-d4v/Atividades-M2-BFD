@@ -9,7 +9,7 @@ class Artista(Base):
     def apresentacao(self):
         print('Sou artista')
         super().apresentacao() 
-
+    
 class Programador(Base):
     def apresentacao(self):
         print('Sou programador')
@@ -18,6 +18,5 @@ class Programador(Base):
 class PessoaMultiTalento(Artista,Programador):
     def apresentacao(self):
         print('Sou uma pessoa multi_talento')
-        super().apresentacao()
-        
+        super().apresentacao()      
 PessoaMultiTalento().apresentacao()
